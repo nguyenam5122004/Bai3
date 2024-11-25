@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Project1.Controllers.Student
+
+<h1>Đăng ký chuyên ngành</h1>
+
+<form asp-action="Register" method="post" style="max-width: 400px;">
+    <div style="margin-bottom: 15px;">
+        <label for="MSSV" style="display: block; font-weight: bold;">Mã số sinh viên:</label>
+        <input asp-for="MSSV" class="form-control" style="width: 100%;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="HoTen" style="display: block; font-weight: bold;">Họ và tên:</label>
+        <input asp-for="HoTen" class="form-control" style="width: 100%;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="DiemTB" style="display: block; font-weight: bold;">Điểm trung bình:</label>
+        <input asp-for="DiemTB" type="number" step="0.01" class="form-control" style="width: 100%;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="ChuyenNganh" style="display: block; font-weight: bold;">Chuyên ngành:</label>
+        <select asp-for="ChuyenNganh" class="form-select" style="width: 100%;">
+            <option value="CNPM">CNPM</option>
+            <option value="HTTT">HTTT</option>
+            <option value="ANM">ANM</option>
+            <option value="TTNT">TTNT</option>
+            <option value="MMT">MMT</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>
+

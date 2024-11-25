@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Kết quả đăng ký</h1>
+
+<p>Cảm ơn bạn <strong>@TempData["HoTen"]</strong> - MSSV: <strong>@TempData["MSSV"]</strong></p>
+<p>Bạn đã đăng ký chuyển ngành <strong>@TempData["ChuyenNganh"]</strong></p>
+
+<p>Số lượng sinh viên đã đăng ký cùng ngành: <strong>@TempData["SoLuongCungNganh"]</strong></p>
+
+<a href="@Url.Action("Index", "Student")">Quay lại trang đăng ký</a>
